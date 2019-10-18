@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: firebrick;
+    text-align: center;
+    font-family: tahoma;
+  }
+  
+  .container {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .container h1 {
+    color: #fff;
+    font-size: 72px;
+    font-weight: 300;
+    letter-spacing: .25rem;
+    margin-bottom: 100px;
+  }
+  
+  .container h3 {
+    font-size: 70px;
+    color: #fff;
+    margin: 0;
+  }
+  
+  .container p {
+    color: #fff;
+    font-size: 25px;
+    margin-top: 0;
+  }
+  
+  .container .plus {
+    background: none;
+    border: 0;
+    color: #fff;
+    position: absolute;
+    top: -60px;
+    left: 8px;
+    transition: .3s;
+    cursor: pointer;
+    outline: 0;
+  }
+  
+  .container .plus:hover {
+    color: #9b9b9b;
+  }
+  
+  .container .minus {
+    background: none;
+    border: 0;
+    color: #fff;
+    position: absolute;
+    top: 110px;
+    left: 8px;
+    transition: .3s;
+    cursor: pointer;
+    outline: 0;
+    padding-top: 10px;
+  }
+  
+  .container .minus:hover {
+    color: #9b9b9b;
+  }
+  
+  .container .hours, .container .minutes, .container .seconds {
+    position: relative;
+    margin-right: 60px;
+    display: inline-block;
+  }
+  
+  .container .seconds {
+    margin-right: 0;
+  }
+  
+  .container .hours:after, 
+  .container .minutes:after {
+    content: ":";
+    font-size: 60px;
+    color: #fff;
+    position: absolute;
+    right: -40px;
+    top: 5px;
+  }
+  
+  .container .set {
+    background: none;
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    color: #fff;
+    margin: 70px auto;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: .3s;
+    display: block;
+  }
+  
+  .container .set:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  
+  .container .controls {
+    width: 100%;
+    margin: 50px auto;
+    display: none;
+  }
+  
+  .container .controls button {
+    background: none;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    outline: 0;
+  }
